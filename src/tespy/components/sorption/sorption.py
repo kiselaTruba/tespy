@@ -129,7 +129,7 @@ class _SorptionBase(NodeBase):
         self.constraints["fluid_balance_constraints"].num_eq = num_eq
 
     def calc_parameters(self):
-        self.Q.val = self.calc_Q()
+        self.Q.val_SI = self.calc_Q()
 
     def convergence_check(self):
         from tespy.tools.fluid_properties.functions import h_mix_pT
